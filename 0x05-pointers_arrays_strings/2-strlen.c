@@ -1,12 +1,15 @@
 #include "main.h"
 /**
- *  * _puts - Prints a string.
+ *  * _strlen - Returns the length of a string.
  *   * @str: string.
- *    */
-void _puts(char *str)
+ *    *
+ *     * Return: Length.
+ *      */
+size_t _strlen(const char *str)
 {
-		while (*str)
-				_putchar(*str++);
+		size_t len = 0;
 
-			_putchar('\n');
+			while (*str++)
+					len++;
+				return (len);
 }

@@ -1,15 +1,10 @@
 #include "main.h"
 /**
- *  * _strlen - Returns the length of a string.
- *   * @str: string.
- *    *
- *     * Return: Length.
- *      */
-size_t _strlen(const char *str)
+ *  * reset_to_98 - resets value of pointer to 98
+ *   * @n: pointer to reset to 98
+ *    * Return: void
+ *     */
+void reset_to_98(int *n)
 {
-		size_t len = 0;
-
-			while (*str++)
-					len++;
-				return (len);
+			*n = 98;
 }
